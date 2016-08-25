@@ -35,7 +35,7 @@ function loadData() {
         $nytHeaderElem.html('<h6 class="text-danger"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> Error retrieving NYTimes resources</h6>');
     });
     
-    var wikiUrl = "http://en.wikipedia.org/w/api.php?action=opensearch&search=" + city + "&format=json&callback=wikiCallback";
+    var wikiUrl = "https://en.wikipedia.org/w/api.php?action=opensearch&search=" + city + "&format=json&callback=wikiCallback";
     var wikiRequestTimeout = setTimeout(function(){
         // $wikiElem.text("failed to get Wikipedia resources").css({ 'color': 'red', 'font-size': '150%' });
         $wikiElem.html('<h6 class="text-danger"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> Error retrieving Wikipedia resources</h6>');
